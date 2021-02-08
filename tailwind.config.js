@@ -13,6 +13,8 @@ module.exports = {
         'balls-blue':'#8EA9BA',
         'texters-brown':'#7F6B5B',
         'headers-brown':'#534741',
+        'nokia-light': '#c7f0d8',
+        'nokia-dark': '#43523d',
 
       }
     },
