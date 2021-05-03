@@ -7,6 +7,7 @@
           scroll-behavior: smooth;
         }
     </style>
+    <script src="https://unpkg.com/vue"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jet simon</title>
@@ -25,12 +26,15 @@
 
     </div>
     
-    <div class="text-center tracking-wide font-bold text-texters-brown text-2xl">NOTE TO JET: think of 2-5 cool things you made - past jet </div>
+    <div id="app" class="mx-auto justify-items-center grid gap-10 grid-cols-1 grid-rows-auto">
+    <portfolio-item path="json/tavern.json"></portfolio-item>
+    </div>
     
         
     </div>
     <div class="text-center">
         <a class="italic font-normal text-headers-brown px-3 py-5 my-3 hover:text-texters-brown select-none" href="http://jetsimon.github.io">← back home</a>
-    </div>>
+    </div>
+    <script src="js/portfolio.js"></script>
 </body>
 </html>
