@@ -17,8 +17,8 @@ Vue.component('portfolio-item', {
         </div>
         <div class="my-auto ">
             <p class="text-gray-900 bg-gray-100 shadow px-8 py-3 rounded-lg mx-auto w-5/6 text-base text-center">{{this.desc}}</p>
-            <a class="text-blue-500 text-xs hover:text-blue-700" :href=this.link>link to project</a>
             <a class="text-blue-500 text-xs hover:text-blue-700" :href=this.source>source code</a>
+            <a class="text-blue-500 text-xs hover:text-blue-700" :href=this.link>link to project</a>
         
             </div>
         </div>
