@@ -1,0 +1,8 @@
+{
+    "title":"Tavern",
+    "desc":"A gameified RPG style coding challenge site made in 24 hours for NwHacks2020 with some friends. Very cool experience working with a team to bring a product to life in such a short time. I mainly worked on the avatar creation system. Lots of SVGs!",
+    "tech":["Redwood JS", "React", "Tailwind CSS", "Magic Auth", "JS"],
+    "image":"https://res.cloudinary.com/devpost/image/fetch/s--Ozl9ZKJb--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://cdn.discordapp.com/attachments/794419266052161566/797920267216093214/Screen_Shot_2021-01-10_at_12.10.12_PM.png",
+    "source":"https://github.com/amorriscode/tavern",
+    "link":"https://devpost.com/software/tavern-2764g3"
+}
