@@ -1,8 +1,13 @@
 {
     "title":"EthJack",
-    "desc":"A proof of concept Ethereum friendly gambling tool. Lets the user specify a dealer address to hold money/send money to. User can also check their current wallet balance, and also uses fetch requests to get price conversion for ETH -> CAD on the fly. For high rollers only! The gas prices are insane.",
+    "desc":"A proof of concept Ethereum friendly gambling tool. Lets the user specify a dealer address to hold money/send money to. User can also check their current wallet balance. For high rollers only! The gas prices are insane.",
     "tech":["vue", "MetaMask API", "tailwind css", "vanilla js"],
     "image":"/public/img/ethjack.png",
     "source":"https://github.com/JetSimon/Eth-Jack",
-    "link":"http://jetsimon.com/Eth-Jack/"
+    "link":"http://jetsimon.com/Eth-Jack/",
+    "learned":["How to make a web app interact with cryptocurrency using MetaMask's in-browser-chrome-extension-wallet API", 
+        "How to use fetch requests to update the conversion rate of ETH -> CAD",
+        "How to use Vue to have the site be reactive to states (gives installation instructions if user does not have MetaMask installed)",
+        "Making something for your family is fun! I made this for my Dad on his birthday so we could play blackjack with our Ethereum. Only took ~4 hours for the base!"
+    ]
 }

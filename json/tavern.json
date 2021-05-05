@@ -4,5 +4,12 @@
     "tech":["redwood js", "react", "tailwind css", "magic auth", "vanilla js"],
     "image":"https://res.cloudinary.com/devpost/image/fetch/s--Ozl9ZKJb--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://cdn.discordapp.com/attachments/794419266052161566/797920267216093214/Screen_Shot_2021-01-10_at_12.10.12_PM.png",
     "source":"https://github.com/amorriscode/tavern",
-    "link":"https://devpost.com/software/tavern-2764g3"
+    "link":"https://devpost.com/software/tavern-2764g3",
+    "learned":[
+        "How to break up work in a four person team, communicate, and complete a project in 24 hours",
+        "How to use redwood js to quickly and easily create a basic CRUD app",
+        "How finicky SVGs will be if you disrespect them (too many hours lost)",
+        "A little last minute work on a homepage goes a longway. We were working with almost no homepage until the last hour of the project and it added a lot!",
+        "Sometimes the easiest solution actually is the best one."
+    ]
 }

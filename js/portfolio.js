@@ -1,12 +1,12 @@
 Vue.component('portfolio-item', {
     data: function () {
         return {
-            title:"test", desc:null, tech:["tailwind css","vanilla js", "vue", "MetaMask API"], image:null, source:null, link:null
+            title:"ERROR", desc:null, tech:[], image:null, source:null, link:null, learned:[]
         }
       },
     props: ['path'],
     template: `
-    <div class="bg-white text-center rounded-lg shadow w-5/6 font-sans text-gray-600 px-5">
+    <div class="bg-white text-center rounded-lg shadow w-5/6 font-sans text-gray-600 px-5 py-3">
         <div class="grid grid-cols-1 md:grid-cols-2">
         <div>
             <a :href=this.link>
@@ -16,7 +16,8 @@ Vue.component('portfolio-item', {
             </a>
         </div>
         <div class="my-auto ">
-            <p class="text-gray-900 bg-gray-100 shadow px-8 py-3 rounded-lg mx-auto w-5/6 text-base text-center">{{this.desc}}</p>
+            <div class="text-gray-900 bg-gray-100 shadow px-8 py-3 rounded-lg mx-auto w-5/6 text-base text-center"><p class="text-xl font-bold italic">what is it?</p>{{this.desc}}</div>
+            <div class="text-gray-900 bg-gray-100 shadow px-8 py-3 mt-2 rounded-lg mx-auto w-5/6 text-base text-center"><p class="text-xl font-bold italic">lessons learned</p><ul class="text-left list-disc"><li class="text-sm" v-for="lesson in this.learned">{{lesson}}</li></ul></div>
             <a class="text-blue-500 text-xs hover:text-blue-700" :href=this.source>source code</a>
             <a class="text-blue-500 text-xs hover:text-blue-700" :href=this.link>link to project</a>
         
@@ -38,6 +39,7 @@ Vue.component('portfolio-item', {
             this.link = data.link
             this.image = data.image
             this.source = data.source
+            this.learned = data.learned
         });
     }
 })
