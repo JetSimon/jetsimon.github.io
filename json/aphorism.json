@@ -1,6 +1,6 @@
 {
     "title":"aphorism.io",
-    "desc":"Made in 48 hours for LudumDare48 game jam. A party game ala JackBox/skribbl.io where users play in real time with friends. I avoided using a DB by just storing everything as an object on the node.js server (An interesting solution for sure! Really shows my ingenuity). Users create a room and share the link to see who can come up with the most hilarious - but thought provoking - aphorism.",
+    "desc":"Made in 48 hours for LudumDare48 game jam. A party game ala JackBox/skribbl.io where users play in real time with friends. I avoided using a DB by just storing everything as an object on the node.js server (An interesting solution for sure! Really shows my ingenuity). Users create a room and share the link to see who can come up with the most hilarious - but thought provoking - aphorism. Won 25th most innovative game out of 1145 Compo entries.",
     "tech":["express", "node.js", "vue", "socket.io", "vanilla js"],
     "image":"https://static.jam.vg/raw/cd2/c2/z/3b97f.png",
     "source":"https://github.com/JetSimon/LD48",
