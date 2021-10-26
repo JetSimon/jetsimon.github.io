@@ -1,43 +1,42 @@
 <html lang="en">
-
-
 <head>
-    <style>
-        html {
-          scroll-behavior: smooth;
-        }
-    </style>
-    <script src="https://unpkg.com/vue"></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jet simon</title>
     <link rel="stylesheet" href="public/build/tailwind.css">
+    <link rel="stylesheet" href="public/build/custom.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
-<body class="bg-background-brown">
+<body class="px-10 bg-background-white">
 
-        <a class="italic font-normal text-headers-brown px-3 py-5 my-3 hover:text-texters-brown select-none" href="http://jetsimon.github.io">back home</a>
+    <div class="flex content-center mx-auto">
+        <div class="mx-auto flex text-6xl font-comfort font-bold text-black mt-16">jet simon 👦</div>
+    </div>
 
+    <div class="flex content-center mx-auto">
+        <div class="text-center mx-auto mt-5 flex text-2xl font-comfort font-semibold text-gray-800">Web & Game Developer / General Maker of Things</div>
+    </div>
 
-    <div class="flex mb-4 items-center justify-center mx-auto py-10">
-        <div><img src="public/img/moreshapes.svg" class="pb-16 h-auto w-full" alt="more shapes"></img>
+    <div class="w-1/2 md:w-2/3 xl:w-1/2 flex flex-wrap gap-5 content-center mx-auto">
+        <a href="../" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">About Me</a>
+        <a href="../portfolio" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">Portfolio</a>
+        <a href="../blog" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">Blog</a>
+    </div>
+
+    <div class="mt-16 w-full md:w-1/2 h-2/3 mx-auto">
+        <h1 class="font-comfort font-bold text-5xl">Portfolio</h1>
         
-        <h1 class="select-none text-center font-thin italic text-headers-brown tracking-widest text-6xl">portfolio</h1>
+        <div id="app" class="mx-auto justify-items-center grid gap-10 grid-cols-1 grid-rows-auto">
+            <portfolio-item path="tavern.json"></portfolio-item>
+            <portfolio-item path="haircuts.json"></portfolio-item>
+            <portfolio-item path="ethjack.json"></portfolio-item>
+            <portfolio-item path="aphorism.json"></portfolio-item>
         </div>
-
-    </div>
-    
-    <div id="app" class="mx-auto justify-items-center grid gap-10 grid-cols-1 grid-rows-auto">
-        <portfolio-item path="tavern.json"></portfolio-item>
-        <portfolio-item path="haircuts.json"></portfolio-item>
-        <portfolio-item path="ethjack.json"></portfolio-item>
-        <portfolio-item path="aphorism.json"></portfolio-item>
-    </div>
-    
         
+        <script src="js/portfolio.js"></script>
     </div>
-    <div class="text-center">
-        <a class="italic font-normal text-headers-brown px-3 py-5 my-3 hover:text-texters-brown select-none" href="http://jetsimon.github.io">← back home</a>
-    </div>
-    <script src="js/portfolio.js"></script>
+    
 </body>
 </html>
