@@ -1,3 +1,23 @@
+Vue.component('navbar', {
+    template: `<div>
+    <div class="flex content-center mx-auto">
+        <a href="../" class="mx-auto flex text-6xl font-comfort font-bold text-black mt-16">jet simon 👦</a>
+    </div>
+
+    <div class="flex content-center mx-auto pb-2">
+        <div class="text-center mx-auto mt-5 flex text-2xl font-comfort font-semibold text-gray-800">Web & Game Developer / General Maker of Things</div>
+    </div>
+
+    <div class="w-1/2 md:w-2/3 xl:w-1/2 flex flex-wrap gap-5 content-center mx-auto">
+        <a href="../" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">About Me</a>
+        <a href="../portfolio" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">Portfolio</a>
+        <a href="../blog" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">Blog</a>
+        <a href="../public/resume.pdf" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">Resume</a>
+    </div></div>
+    `
+})
+
+
 Vue.component('portfolio-item', {
     data: function () {
         return {
@@ -45,24 +65,81 @@ Vue.component('portfolio-item', {
     }
 })
 
-Vue.component('navbar', {
-    template: `<div>
-    <div class="flex content-center mx-auto">
-        <a href="../" class="mx-auto flex text-6xl font-comfort font-bold text-black mt-16">jet simon 👦</a>
+Vue.component('blog-post', {
+    data: function () {
+        return {
+            title:"", body:"", date:""
+        }
+      },
+    template: `
+    <div class="bg-white text-center w-full font-sans px-5">
+        <div>
+            <h1 class="text-black font-comfort text-center text-5xl">{{this.title}}</h1>
+            <p class="text-gray-600 text-center mb-5">{{date}}</p>
+            <hr>
+            <div id="post-body" class="my-5 text-xl leading-loose text-gray-900 text-left">{{this.body}}</div>
+            <hr>
+        </div>
     </div>
+    `,
+    computed: {
+        techList:function(){
+          return "made with " + this.tech.join(", ")
+        }
+    },
+    mounted() {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const path = urlParams.get('post') || 'test-post'
+        console.log(path)
+        fetch('/posts/' + path + ".json").then(response => response.json())
+        .then(data => {
+            this.title = data.title
+            this.date = data.date
+        });
 
-    <div class="flex content-center mx-auto pb-2">
-        <div class="text-center mx-auto mt-5 flex text-2xl font-comfort font-semibold text-gray-800">Web & Game Developer / General Maker of Things</div>
+        fetch('/posts/' + path + ".md") 
+        .then(response => response.text())
+        .then(result => document.getElementById('post-body').innerHTML = marked(result));
+        
+    }
+})
+
+Vue.component('recent-posts', {
+    template: `<div class="mx-auto text-center md:text-right">
+    <h1 class="font-semibold mb-3 text-xl font-comfort">Recent Posts</h1>
+    <ul>
+        <post-link path="test-post"></post-link>
+    </ul>
     </div>
-
-    <div class="w-1/2 md:w-2/3 xl:w-1/2 flex flex-wrap gap-5 content-center mx-auto">
-        <a href="../" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">About Me</a>
-        <a href="../portfolio" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">Portfolio</a>
-        <a href="../blog" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">Blog</a>
-        <a href="../public/resume.pdf" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">Resume</a>
-    </div></div>
     `
 })
+
+Vue.component('post-link', {
+    data: function () {
+        return {
+            title:"ERROR"
+        }
+      },
+    props: ['path'],
+    template: `<li><a :href=link class="text-center md:text-right hover:text-blue-800">{{title}}</a></li>
+    `,
+    computed: {
+        link:function(){
+          if (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+            return "../blog.html?post=" + this.path;
+          return "../blog?post=" + this.path
+        }
+    },
+    mounted() {
+        fetch('/posts/' + this.path + ".json").then(response => response.json())
+        .then(data => {
+            this.title = data.title
+        })
+    }
+})
+
+
 
 
 var app = new Vue({el: '#app', data: {}})
