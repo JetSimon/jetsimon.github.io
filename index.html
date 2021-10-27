@@ -48,6 +48,7 @@
     <script src="js/components.js"></script>
 
     <script>
+        let lastIndex = 0
         let canDraw = false;
         const clearButton = document.getElementById("clear-button");
         clearButton.style.display = "none";
@@ -64,9 +65,12 @@
             point.x = event.clientX;
             point.y = event.clientY;
             shape.points.appendItem(point);
-            shape.style.fill = colors[Math.floor(Math.random() * colors.length)]
             clickCount++;
             if(clickCount >= 3) {
+                let index = Math.floor(Math.random() * colors.length)
+                index = lastIndex == index ? index - 1 : index
+                lastIndex = index
+                shape.style.fill = colors[index]
                 shape = document.createElementNS(xmlns, "polygon");
                 svg.appendChild(shape);
                 clickCount = 0;
