@@ -74,7 +74,7 @@ Vue.component('blog-post', {
     template: `
     <div class="bg-white text-center w-full font-sans px-5">
         <div>
-            <h1 class="text-black font-comfort text-center text-5xl">{{this.title}}</h1>
+            <h1 class="text-black font-comfort text-center text-3xl md:text-5xl">{{this.title}}</h1>
             <p class="text-gray-600 text-center mb-5">{{date}}</p>
             <hr>
             <div id="post-body" class="my-5 text-xl leading-loose text-gray-900 text-left">{{this.body}}</div>
