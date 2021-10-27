@@ -1,4 +1,4 @@
-I'll be trying to make posts here and improving this blog system for the website I'm working on. I plan on posting 'how I made this' posts, and cool things I find.
+I'll be trying to make posts here and improving this blog system. I plan on posting 'how I made this' posts, and cool things I find.
 
 I even got it set up so I can use **markdown**
 
