@@ -5,7 +5,7 @@ Vue.component('navbar', {
     </div>
 
     <div class="flex content-center mx-auto pb-2">
-        <div class="text-center mx-auto mt-5 flex text-2xl font-comfort font-semibold text-gray-800">Web & Game Developer / General Maker of Things</div>
+        <div class="text-center mx-auto mt-5 flex text-sm md:text-2xl font-comfort font-semibold text-gray-800">Web & Game Developer / General Maker of Things</div>
     </div>
 
     <div class="w-3/4 md:w-2/3 xl:w-1/2 flex md:text-xl flex-wrap gap-5 content-center mx-auto">
