@@ -5,46 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jet simon</title>
     <link rel="stylesheet" href="public/build/tailwind.css">
+    <link rel="stylesheet" href="public/build/custom.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+    <script src="https://unpkg.com/vue"></script>
 </head>
-<body class="bg-background-brown">
-    <div class="flex mb-4 content-center mx-auto">
-        
-        <div class="hidden md:block items-center md:w-1/2 h-12 object-cover ">
-            <div class="relative  transition duration-500 ease-in-out transform hover:scale-105">
-                <img src="public/img/shapes.svg" alt="artsy shapes" class="w-full object-cover pl-64 pt-32"></img>
-                <img class="absolute top-1/3 left-1/3" src="public/img/jet.png"></img>
-            </div>
-        </div>
+<body class="px-10 bg-background-white">
+    <div id="app">
+    <navbar></navbar>
 
-        <div class="text-center m-auto md:text-left w-full md:w-1/2 h-12 pt-32 md:pl-16">
-            <img src="public/img/shapes.svg" alt="artsy shapes" class="md:hidden w-1/3 mx-auto mb-10 object-cover -mt-20 transition duration-500 ease-in-out transform hover:scale-105"></img>
-            <h1 class="select-none font-light text-6xl tracking-widest text-headers-brown">jet simon</h1>
-            
-            <p class="mx-auto md:mx-0 pt-16 w-2/3 mb-10 md:mb-0 font-thin tracking-wide text-xl md:text-base lg:text-xl  text-texters-brown ">
-                hello, my name is jet.<br> i am a twenty-two year old 
-                <span class="font-bold">computer science major</span> 
-                with a passion for <span class="font-bold">programming (games and web), creating music, and visual art.</span> <br>this site is a collection of stuff i have made and other fun things. 
-                <br><br>come on in!<br><br>
-                if you need to <span class="font-bold">get ahold of me</span>, you can <a href="mailto:jetjdsimon@gmail.com" class="text-texters-brown font-bold hover:text-ogre-green">email me</a>, <a href="https://www.twitter.com/SimonJet" class="text-texters-brown font-bold hover:text-balls-blue">tweet me</a>, or <a href="https://www.github.com/JetSimon" class="text-texters-brown font-bold hover:text-rootin-red">get grimey with me on github</a>.
-                <br><br><a href="/2021" class="text-texters-brown hover:text-white">i am currently creating <span class="font-bold">one game a month in 2021</span>, you can click here for more info!</a></p>
-          
-            <div>
+    <div class="mt-16 w-full md:w-1/2 h-2/3 mx-auto">
+        <h1 class="text-center md:text-left font-comfort font-bold text-5xl">About Me</h1>
+        <p class="font-comfort text-xl text-gray-800 mt-5">
+            Howdy, I'm Jet. Yes that is my birth name, no it's not short for anything.<br><br>
+            I am a 23 year-old CS major currently attending Simon Fraser University.<br><br>
+            Here are some things I've accomplished in the past year or so that I'm proud of:
+            <ul class="list-disc font-comfort text-xl text-gray-800 mt-10">
+                <li class="ml-10 my-3">Successfully participated in at least <a href="https://itch.io/c/1476380/one-game-a-month-2021" class="hover:text-blue-800 font-semibold">one game jam every month in the year 2021</a> 📅</li>
+                <li class="ml-10 my-3">Games reviewed on <a href="https://www.freegameplanet.com/7-second-haircuts-browser-game/" class="hover:text-blue-800 font-semibold">multiple</a> <a href="https://indiegamesplus.com/2021/10/goshzilla-is-in-love-follows-a-giant-monster-date" class="hover:text-blue-800 font-semibold">online</a> <a href="https://www.freegameplanet.com/goshzilla-is-in-love-browser-game/" class="hover:text-blue-800 font-semibold">gaming blogs/review sites</a> 📰</li>
+                <li class="ml-10 my-3">Have had my <a href="https://www.youtube.com/watch?v=WvNrEKkpWD8&t=1s" class="hover:text-blue-800 font-semibold">games played by YouTubers</a> with over 1 million subscribers! 🖥️</li>
+                <li class="ml-10 my-3">My band <a href="https://gotcurves.bandcamp.com/" class="hover:text-blue-800 font-semibold">Curves</a> was written about on popular music site <a href="https://www.pastemagazine.com/music/records-you-may-have-missed/great-records-you-may-have-missed-august-2021/" class="hover:text-blue-800 font-semibold">Paste Magazine</a> 🎸</li>
+                <li class="ml-10 my-3">Kept up my Duolingo streak for Vietnamese! So far I have almost a two year streak 📚</li>
+                <li class="ml-10 my-3">Started attending Post Secondary School after my gap year turned into four years. It's never too late! 🎓</li>
+            </ul>
+            <br><br>
+        </p>
 
-            <div class="hidden md:block pt-16 text-center pr-64 h-auto">
-                <a href="https://jetsimon.github.io/portfolio" class=" py-4 px-5 shadow-xl font-thin tracking-normal bg-headers-brown hover:bg-texters-brown truncate text-gray-200 md:text-base lg:text-2xl rounded-lg mt-6">click here if you want to see my portfolio</a>
-            </div>
-            
-            <div class="hidden md:block pt-16 text-center pr-64 h-auto">
-            <a href="https://jetsimon.github.io/whatido" class=" py-4 px-5 shadow-xl font-thin tracking-normal bg-headers-brown hover:bg-texters-brown truncate text-gray-200 md:text-base lg:text-2xl rounded-lg mt-6">what else do you do? (smaller projects/games/art)</a>
-            </div>
-            <div class="pb-5">
-                <a href="https://jetsimon.github.io/portfolio" class="md:hidden py-2 mb-10 px-24 shadow-xl font-thin tracking-normal bg-headers-brown hover:bg-texters-brown truncate text-gray-200 md:text-base lg:text-2xl rounded-lg mt-10">portfolio</a>
-            </div>
-            
-        </div>
-        
-        
+        <p class="font-comfort text-xl text-gray-800 pb-10">
+            I hope that didn't appear too egotistical. If you need to contact me, you can <a href="mailto:jetjdsimon@gmail.com" class="hover:text-blue-800 font-semibold">email me</a>, add me on <a href="https://www.linkedin.com/in/jet-simon/" class="hover:text-blue-800 font-semibold">LinkedIn</a>, or find me on <a href="https://github.com/jetsimon" class="hover:text-blue-800 font-semibold">GitHub</a>!
+            <br><br>Thank you, and have a nice day 😊
+        </p>
+
+       
+
     </div>
-    
+    </div>
+    <script src="js/components.js"></script>
 </body>
 </html>
