@@ -116,7 +116,7 @@ Vue.component('blog-post', {
 Vue.component('recent-posts', {
     data: function () {
         return {
-            posts:['test-post']
+            posts:[]
         }
       },
     template: `<div class="mx-auto text-center">
@@ -125,7 +125,13 @@ Vue.component('recent-posts', {
         <post-link v-for="post in posts" post-link :path=post></post-link>
     </ul>
     </div>
-    `
+    `,
+    mounted() {
+        fetch('/posts/post-database.json').then(response => response.json())
+        .then(data => {
+            this.posts = data.posts
+        });
+    }
 })
 
 Vue.component('post-link', {
