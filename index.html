@@ -68,8 +68,8 @@
             clickCount++;
             if(clickCount >= 3) {
                 let index = Math.floor(Math.random() * colors.length)
-                index = lastIndex == index ? index - 1 : index
-                lastIndex = Math.max(0, index)
+                index = lastIndex == index ? Math.max(0,index - 1) : index
+                lastIndex = index
                 shape.style.fill = colors[index]
                 shape = document.createElementNS(xmlns, "polygon");
                 svg.appendChild(shape);
