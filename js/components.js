@@ -114,10 +114,15 @@ Vue.component('blog-post', {
 })
 
 Vue.component('recent-posts', {
-    template: `<div class="mx-auto text-center md:text-right">
+    data: function () {
+        return {
+            posts:['test-post']
+        }
+      },
+    template: `<div class="mx-auto text-center">
     <h1 class="font-semibold mb-3 text-xl font-comfort">Recent Posts</h1>
     <ul>
-        <post-link path="test-post"></post-link>
+        <post-link v-for="post in posts" post-link :path=post></post-link>
     </ul>
     </div>
     `
@@ -126,11 +131,11 @@ Vue.component('recent-posts', {
 Vue.component('post-link', {
     data: function () {
         return {
-            title:"ERROR"
+            title:""
         }
       },
     props: ['path'],
-    template: `<li><a :href=link class="text-center md:text-right hover:text-blue-800">{{title}}</a></li>
+    template: `<li><a :href=link class="text-xl text-center md:text-right hover:text-blue-800">{{title}}</a><hr class="my-2"></li>
     `,
     computed: {
         link:function(){
