@@ -1,18 +1,18 @@
 Vue.component('navbar', {
     template: `<div>
     <div class="flex content-center mx-auto">
-        <a href="../" class="mx-auto flex text-6xl font-comfort font-bold text-black mt-16">jet simon 👦</a>
+        <a href="../" class="mx-auto flex text-4xl md:text-6xl font-comfort font-bold text-black mt-16">jet simon 👦</a>
     </div>
 
     <div class="flex content-center mx-auto pb-2">
         <div class="text-center mx-auto mt-5 flex text-2xl font-comfort font-semibold text-gray-800">Web & Game Developer / General Maker of Things</div>
     </div>
 
-    <div class="w-1/2 md:w-2/3 xl:w-1/2 flex flex-wrap gap-5 content-center mx-auto">
-        <a href="../" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">About Me</a>
-        <a href="../portfolio" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">Portfolio</a>
-        <a href="../blog" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">Blog</a>
-        <a href="../public/resume.pdf" class="hover:text-blue-800 mx-auto mt-5 flex text-xl font-comfort font-semibold text-gray-800">Resume</a>
+    <div class="w-3/4 md:w-2/3 xl:w-1/2 flex md:text-xl flex-wrap gap-5 content-center mx-auto">
+        <a href="../" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">About Me</a>
+        <a href="../portfolio" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">Portfolio</a>
+        <a href="../blog" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">Blog</a>
+        <a href="../public/resume.pdf" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">Resume</a>
     </div></div>
     `
 })
