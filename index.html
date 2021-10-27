@@ -68,7 +68,8 @@
             clickCount++;
             if(clickCount >= 3) {
                 let index = Math.floor(Math.random() * colors.length)
-                index = lastIndex == index ? Math.max(0,index - 1) : index
+                index = lastIndex == index ? index-1 : index
+                if(index < 0) index += colors.length
                 lastIndex = index
                 shape.style.fill = colors[index]
                 shape = document.createElementNS(xmlns, "polygon");
