@@ -74,7 +74,7 @@ Vue.component('blog-post', {
     template: `
     <div class="bg-white text-center w-full font-sans px-5">
         <div>
-            <h1 class="text-black font-comfort text-center text-3xl md:text-5xl">{{this.title}}</h1>
+            <a :href="link" class="hover:text-gray-900 text-black font-comfort text-center text-3xl md:text-5xl">{{this.title}}</a>
             <p class="text-gray-600 text-center mb-5">{{date}}</p>
             <hr>
             <div id="post-body" class="my-5 text-xl leading-loose text-gray-900 text-left">{{this.body}}</div>
@@ -85,7 +85,15 @@ Vue.component('blog-post', {
     computed: {
         techList:function(){
           return "made with " + this.tech.join(", ")
-        }
+        },
+        link:function(){
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const path = urlParams.get('post') || 'test-post'
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+            return "../blog.html?post=" + path;
+            return "../blog?post=" + path
+          }
     },
     mounted() {
         const queryString = window.location.search;
