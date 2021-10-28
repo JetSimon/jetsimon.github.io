@@ -10,7 +10,7 @@ slug = title.lower().replace(" ","-")
 
 f = open(PATH + slug + ".json", 'w')
 
-f.write('{\n\t"title":"' + title + '",\n\t"date":"' + str(datetime.date.today()) + '"\n}')
+f.write('{\n\t"title":"' + title + '",\n\t"date":"' + str(datetime.date.today()) + '",\n\t"tags":[]\n}')
 f.close()
 
 f = open(PATH + slug + ".md", 'w')
