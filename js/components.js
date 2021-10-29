@@ -79,8 +79,8 @@ Vue.component('blog-post', {
             <a :href="link" class="hover:text-gray-900 text-black font-comfort text-center text-3xl md:text-5xl">{{this.title}}</a>
             <p class="text-gray-600 text-center mb-5">{{date}}</p>
             <hr>
-            <div id="post-body" class="my-5 text-xl tracking-wide leading-loose text-gray-900 text-left">{{this.body}}</div>
-            <hr>
+            <div id="post-body" class="mx-auto prose my-5 mt-7 text-xl tracking-wide leading-loose text-gray-900 text-left">{{this.body}}</div>
+            
         </div>
     </div>
     `,
