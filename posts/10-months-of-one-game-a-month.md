@@ -17,9 +17,9 @@ The year started off fairly middling. You notice some *small* bumps in views eac
 
 May is when I had my first bigger success story, [**7 Second Haircuts**](https://simonjet.itch.io/7-second-haircuts). It currently is my most popular game with ~16000 views. I believe this game's success is due to three major factors:<br><br>
 
-**1** - The game is short, but has a **fun and simple mechanic** that is slowly introduced. Building the whole game around one simple mechanic was a great idea!<br><br>
-**2** - It was **a culmination of my efforts**. I was able to put all the lessons I had learned in the previous months into this game. This game represents a major over all step up in my abilities.<br><br>
-**3** - This game was put **in the Palestinian Aid Bundle**. You may notice that June's game appears to have also got a lot of views. This is false, June's game was somewhat of a failure because I was worried about following up to 7 Second Haircuts. Haircuts just got a **second boost in views in June due to this bundle**.<br><br>
+1. The game is short, but has a **fun and simple mechanic** that is slowly introduced. Building the whole game around one simple mechanic was a great idea!<br><br>
+2. It was **a culmination of my efforts**. I was able to put all the lessons I had learned in the previous months into this game. This game represents a major over all step up in my abilities.<br><br>
+3. This game was put **in the Palestinian Aid Bundle**. You may notice that June's game appears to have also got a lot of views. This is false, June's game was somewhat of a failure because I was worried about following up to 7 Second Haircuts. Haircuts just got a **second boost in views in June due to this bundle**.<br><br>
 
 July featured a aesthetically similar game to Haircuts, [**Shapeshifter In Love**](https://simonjet.itch.io/shapeshifter-in-love). I don't have much to say about this game other than it taught me some neat UI tricks. It was a moderate success as well. By the end of July I was getting tired of making 2D games. So in August I fired up Blender and decided to go with a unlit cartoonish look for my next game. This game was [**Goshzilla Is In Love**](https://simonjet.itch.io/goshzilla-is-in-love). 
 <br><br>
