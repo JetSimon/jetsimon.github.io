@@ -1,3 +1,5 @@
+const LATEST_POST = "10-months-of-one-game-a-month"
+
 Vue.component('navbar', {
     template: `<div>
     <div class="flex content-center mx-auto">
@@ -77,7 +79,7 @@ Vue.component('blog-post', {
             <a :href="link" class="hover:text-gray-900 text-black font-comfort text-center text-3xl md:text-5xl">{{this.title}}</a>
             <p class="text-gray-600 text-center mb-5">{{date}}</p>
             <hr>
-            <div id="post-body" class="my-5 text-xl leading-loose text-gray-900 text-left">{{this.body}}</div>
+            <div id="post-body" class="my-5 text-xl tracking-wide leading-loose text-gray-900 text-left">{{this.body}}</div>
             <hr>
         </div>
     </div>
@@ -89,7 +91,7 @@ Vue.component('blog-post', {
         link:function(){
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
-            const path = urlParams.get('post') || 'test-post'
+            const path = urlParams.get('post') || LATEST_POST
             if (location.hostname === "localhost" || location.hostname === "127.0.0.1")
             return "../blog.html?post=" + path;
             return "../blog?post=" + path
@@ -98,8 +100,7 @@ Vue.component('blog-post', {
     mounted() {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-        const path = urlParams.get('post') || 'test-post'
-        console.log(path)
+        const path = urlParams.get('post') || LATEST_POST
         fetch('/posts/' + path + ".json").then(response => response.json())
         .then(data => {
             this.title = data.title
@@ -122,7 +123,7 @@ Vue.component('recent-posts', {
     template: `<div class="mx-auto text-center">
     <h1 class="font-semibold mb-3 text-xl font-comfort">Recent Posts</h1>
     <ul>
-        <post-link v-for="post in posts" post-link :path=post></post-link>
+        <post-link v-for="post in posts.slice().reverse()" post-link :path=post></post-link>
     </ul>
     </div>
     `,
