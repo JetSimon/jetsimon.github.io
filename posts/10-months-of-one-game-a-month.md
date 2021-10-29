@@ -23,7 +23,7 @@ May is when I had my first bigger success story, [**7 Second Haircuts**](https:/
 
 July featured a aesthetically similar game to Haircuts, [**Shapeshifter In Love**](https://simonjet.itch.io/shapeshifter-in-love). I don't have much to say about this game other than it taught me some neat UI tricks. It was a moderate success as well. By the end of July I was getting tired of making 2D games. So in August I fired up Blender and decided to go with a unlit cartoonish look for my next game. This game was [**Goshzilla Is In Love**](https://simonjet.itch.io/goshzilla-is-in-love). 
 <br><br>
-*Goshzilla* is a short and quirky giant monster dating simulator. It has three different endings and a somewhat destructible city. I am very proud of how the visual's in this game turned out, and it was a great example of a game having two lives. That is, the game did fairly well in it's first month and then died down. But then a couple months later a gaming blog picked it up, and it had a second peak in views. This solidified a belief I have that quality games will age well over time. Where as a cheap cash in may burn bright once, but not have any lasting impact.<br>
+*Goshzilla* is a short and quirky giant monster dating simulator. It has three different endings and a somewhat destructible city. I am very proud of how the visuals in this game turned out, and it was a great example of a game having two lives. That is, the game did fairly well in it's first month and then died down. But then a couple months later a gaming blog picked it up, and it had a second peak in views. This solidified a belief I have that quality games will age well over time. Where as a cheap cash in may burn bright once, but not have any lasting impact.<br>
 
 ![goshzilla gif](../public/img/goshzilla2.gif)
 <br>
@@ -35,9 +35,9 @@ Well we have caught up with the present. It is hard to say much about the games 
 ![office kiss gif](../public/img/officekiss.gif)
 
 
-I have also just released [**Extremely Short Wine Tycoon**](https://simonjet.itch.io/extremely-short-wine-tycoon) this month. It hasn't been a huge success but it has gotten 1000+ views and has a couple dedicated fans. This proves my point from earlier that the more games you release and produce, the more fans you get, and the more your average viewership and engagement goes up for each game you release.<br><br>
+I have also just released [**Extremely Short Wine Tycoon**](https://simonjet.itch.io/extremely-short-wine-tycoon) this month. It hasn't been a huge success but it has gotten 1000+ views and has a couple dedicated fans. This proves my point from earlier that the more games you create, the more fans you get, and the more your average viewership and engagement goes up for each game you release.<br><br>
 
-I highly recommend anyone who wants to hone their skills as a game developer challenge themselves to making one game a month. It will make you a better dev and give you experience finishing and releasing projects. They don't have to be big games, they don't have to best your best, just put 'em out! Oh, and don't forget to give yourself a break after. 
+I highly recommend anyone who wants to hone their skills as a game developer to challenge themselves to make one game a month. It will make you a better dev and give you experience finishing and releasing projects. They don't have to be big games, they don't have to be your best, just put 'em out! Oh, and don't forget to give yourself a break after. 
 
 ---
 
