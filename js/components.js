@@ -105,6 +105,7 @@ Vue.component('blog-post', {
         .then(data => {
             this.title = data.title
             this.date = data.date
+            document.title = data.title + " by Jet Simon"
         });
 
         fetch('/posts/' + path + ".md") 
