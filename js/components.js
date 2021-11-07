@@ -110,8 +110,12 @@ Vue.component('blog-post', {
 
         fetch('/posts/' + path + ".md") 
         .then(response => response.text())
-        .then(result => document.getElementById('post-body').innerHTML = marked(result));
-        
+        .then(result => {
+            if(marked)
+                document.getElementById('post-body').innerHTML = marked.parse(result);
+            else 
+            document.getElementById('post-body').innerHTML = result;
+        })
     }
 })
 
