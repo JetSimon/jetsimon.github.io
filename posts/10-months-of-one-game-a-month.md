@@ -43,7 +43,4 @@ I have also just released [**Extremely Short Wine Tycoon**](https://simonjet.itc
 
 I highly recommend anyone who wants to hone their skills as a game developer to challenge themselves to make one game a month. It will make you a better dev and give you experience finishing and releasing projects. They don't have to be big games, they don't have to be your best, just put 'em out! Oh, and don't forget to give yourself a break after. 
 
----
-
-
 For a more in-depth (if not uglier) look into the games I've made this year, check out [**this page**](http://www.jetsimon.com/2021). I will also be making a YouTube video about this whole situation in early 2022.

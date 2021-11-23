@@ -80,7 +80,8 @@ Vue.component('blog-post', {
             <p class="text-gray-600 text-center mb-5">{{date}}</p>
             <hr>
             <div id="post-body" class="mx-auto prose my-5 mt-7 text-xl tracking-wide leading-loose text-gray-900 text-left">{{this.body}}</div>
-            
+            <hr>
+            <p class="pl-20 my-5 text-left">Like what you've read? <a href="../" class="hover:text-blue-800 font-semibold text-gray-800">Follow me on Twitter</a> to see more!</p>
         </div>
     </div>
     `,
