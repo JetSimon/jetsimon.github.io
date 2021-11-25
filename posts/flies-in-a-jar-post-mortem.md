@@ -4,8 +4,7 @@ My November "I make one game a month in 2021" game is a short SCP & analog horro
 
 Well, maybe a little bit more than decent. It is currently my number two most played game after only two weeks. Currently sitting at 9k views on itch.io. I think this number is probably a bit more too given it seems a lot of online game portals have copied it onto their sites. Not that I mind when that happens, because at least more people are playing my games and I'm credited. Remember that chart from [last post](https://jetsimon.com/blog?post=10-months-of-one-game-a-month)? It looks like this now.
 
-![](../public/img/stats2.png)
-
+![](../public/img/stats.png)
 
 As you can see this was probably my most "viral" game. As it got almost 2000 views per day at its peak, and is still getting ~300 views per day still. I am very happy with that! However, I would like to know *why*.
 
