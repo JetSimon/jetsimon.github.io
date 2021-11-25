@@ -6,6 +6,7 @@ Well, maybe a little bit more than decent. It is currently my number two most pl
 
 ![](../public/img/stats2.png)
 
+
 As you can see this was probably my most "viral" game. As it got almost 2000 views per day at its peak, and is still getting ~300 views per day still. I am very happy with that! However, I would like to know *why*.
 
 My current theory is that itch.io just loves indie horror games that you can play in your web browser. A large percentage of players seem to be younger users, and younger users like horror games. Also my game is more *unsettling* than straight up scary, with only **one** jumpscare (gasp)! I know that I love playing horror games on itch.io. I have played almsot every single [horror game by corpsepile](https://itch.io/profile/corpsepile), a developer who definitely makes better games than this one, and who was a huge inspiration. 
