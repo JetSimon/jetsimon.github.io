@@ -14,7 +14,7 @@ I struggle a lot with feeling like I'm betraying all the lessons I learned churn
 
 I don't know if anyone is reading this, I don't know if anyone cares, but I think I need to re-evaluate. I think I need to spend a month or two prototyping and finding the fun in a very simple mechanic. As a solo developer I don't think I'm able to making sprawling, living, fun rock star simulation game of my dreams. 
 
-But for now, I think I'm going to enjoy my Summer and maybe participate in a few game jams to get my confidence back.
+But for now, I think I'm going to enjoy my Summer and maybe participate in a few game jams to get my confidence back. I'm really hoping I can still get a Steam release out this year, but I'm not going to stake my self worth it in.
 
 XOXO
 
