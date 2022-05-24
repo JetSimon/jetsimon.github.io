@@ -1,4 +1,8 @@
-Hey guys, it's been awhile. Last blog post I wrote I was only one game away from finishing my [*One Game A Month 2021 Challenge*](https://itch.io/c/1476380/one-game-a-month-2021)™. I was itching to work on my first major Steam release, assured by the last year of development that there was *no way* I'd fail. "I've learned how to *finish* things!" I told myself.
+![](../public/img/diy-blog-header.png)
+
+Hey guys, it's been awhile.
+
+Last blog post I wrote I was only one game away from finishing my [*One Game A Month 2021 Challenge*](https://itch.io/c/1476380/one-game-a-month-2021)™. I was itching to work on my first major Steam release, assured by the last year of development that there was *no way* I'd fail. "I've learned how to *finish* things!" I told myself.
 
 On January 11th 2022 (one month ahead of schedule, as I ignored the break I was going to give myself 🥴) I promptly started on my big commercial title: [DIY Tour: Indie Rock Simulator](https://simonjet.itch.io/diy-tour?secret=wRCboADa2Ul2w8a3IT5PwCk3yM). And I'm proud to say it is now playable (barely...kind of?) and even has a Steam page (like all the marketing advice says!)
 
