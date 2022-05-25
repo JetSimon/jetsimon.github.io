@@ -1,4 +1,4 @@
-const LATEST_POST = "flies-in-a-jar-post-mortem"
+const LATEST_POST = "why-i'm-shelving-diy-tour"
 
 Vue.component('navbar', {
     template: `<div>
