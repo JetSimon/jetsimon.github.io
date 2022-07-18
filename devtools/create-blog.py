@@ -6,7 +6,7 @@ PATH = "../posts/"
 
 title = input("Enter post title: ")
 
-slug = title.lower().replace(" ","-")
+slug = title.lower().replace(" ","-").replace("'", "").replace("?","").replace("!","")
 
 f = open(PATH + slug + ".json", 'w')
 
