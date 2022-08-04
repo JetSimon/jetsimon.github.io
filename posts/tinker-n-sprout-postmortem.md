@@ -26,6 +26,8 @@ I think it turned out well for what it is. It hasn't been recieved too crazily y
 * Enemy pathfinding would be good to have, because then if I made other levels I would be able to add obstacles to those levels to switch it up. I think that would take the game to another level.
 * The difficulty curve is too easy. This was a surprise to me because usually I make things too hard for players. Oh well.
 
+## The Future
+
 I may revisit this in the future. I like the concept and I think a Tinker n' Sprout: Deluxe Edition with levels would be the perfect scope for a small Steam release. Something to think about.
 
 Thanks for reading,
