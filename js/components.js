@@ -144,11 +144,12 @@ Vue.component('recent-posts', {
 Vue.component('post-link', {
     data: function () {
         return {
-            title:""
+            title:"",
+            isCurrentPost:false
         }
       },
     props: ['path'],
-    template: `<li><a :href=link class="text-xl text-center md:text-right hover:text-blue-800">{{title}}</a><hr class="my-2"></li>
+    template: `<li><a :href=link class="text-xl text-center md:text-right hover:text-blue-800" :class="{'text-blue-800':isCurrentPost}">{{title}}</a><hr class="my-2"></li>
     `,
     computed: {
         link:function(){
@@ -161,6 +162,9 @@ Vue.component('post-link', {
         fetch('/posts/' + this.path + ".json").then(response => response.json())
         .then(data => {
             this.title = data.title
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            this.isCurrentPost = urlParams.get('post') == this.path
         })
     }
 })
