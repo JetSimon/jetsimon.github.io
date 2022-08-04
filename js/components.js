@@ -8,7 +8,7 @@ Vue.component('logo', {
     },
     template: `
     <div class="flex content-center mx-auto">
-        <a href="../" class="mx-auto flex text-4xl md:text-6xl font-comfort font-bold text-black mt-16">jet simon <span v-on:mouseover="randomEmoji()">{{emoji}}</span></a>
+        <a href="../" class="mx-auto flex text-4xl md:text-6xl font-comfort font-bold text-black mt-16">jet simon <span class="mx-1" v-on:mouseover="randomEmoji()">{{emoji}}</span></a>
     </div>
     `,
     methods: {
