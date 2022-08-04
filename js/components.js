@@ -127,7 +127,7 @@ Vue.component('recent-posts', {
         }
       },
     template: `<div class="mx-auto text-center">
-    <h1 class="font-semibold mb-3 text-xl font-comfort">Recent Posts</h1>
+    <h1 class="font-bold mb-3 text-xl font-comfort">Recent Posts</h1>
     <ul>
         <post-link v-for="post in posts.slice().reverse()" post-link :path=post></post-link>
     </ul>
