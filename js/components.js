@@ -1,10 +1,27 @@
 const LATEST_POST = "tinker-n-sprout-postmortem"
 
+Vue.component('logo', {
+    data: function () {
+        return {
+            emoji:"👦"
+        }
+    },
+    template: `
+    <div class="flex content-center mx-auto">
+        <a href="../" class="mx-auto flex text-4xl md:text-6xl font-comfort font-bold text-black mt-16">jet simon <span v-on:mouseover="randomEmoji()">{{emoji}}</span></a>
+    </div>
+    `,
+    methods: {
+        randomEmoji:function(){
+            const emojis = ['😂','😃','🧘🏻‍♂️','🌍','🌦️','🍞','✈️','🎉','❤️','🍆','😴','💩','👽','🦕','🐉']
+            this.emoji = emojis[Math.floor(Math.random()*emojis.length)]
+        }
+    },
+})
+
 Vue.component('navbar', {
     template: `<div>
-    <div class="flex content-center mx-auto">
-        <a href="../" class="mx-auto flex text-4xl md:text-6xl font-comfort font-bold text-black mt-16">jet simon 👦</a>
-    </div>
+    <logo></logo>
 
     <div class="flex content-center mx-auto pb-2">
         <div class="text-center mx-auto mt-5 flex text-sm md:text-2xl font-comfort font-semibold text-gray-800">Web & Game Developer / General Maker of Things</div>
@@ -15,7 +32,8 @@ Vue.component('navbar', {
         <a href="../portfolio" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">Portfolio</a>
         <a href="../blog" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">Blog</a>
         <a href="../public/resume.pdf" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">Resume</a>
-    </div></div>
+    </div>
+    </div>
     `
 })
 
