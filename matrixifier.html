@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrixifier</title>
+</head>
+<body>
+    <label for="matrixifier">Paste your matlab matrix here and get it formatted for latex</label><br>
+
+    <textarea id="input" name="matrixifier" rows="10" cols="50">
+        0.8147    0.9134    0.2785
+        0.9058    0.6324    0.5469
+        0.1270    0.0975    0.9575
+    </textarea><br>
+
+    <button onclick="convert()">Convert</button><br>
+
+    <textarea style="white-space: pre-wrap;" id="output" rows="10" cols="50">Your output will show up here</textarea>
+
+    <script>
+        const input = document.getElementById("input");
+        const output = document.getElementById("output");
+
+        function convert()
+        {
+            const inputText = input.innerHTML;
+            let rawLines = inputText.split("\n");
+            let outputText = "\\begin{matrix}\n";
+
+            for(let i = 0; i < rawLines.length; i++)
+            {
+                let line = rawLines[i].replace(/\s+/g, ' ').trim();
+                if(line == false) continue;
+
+                line = line.replace(/\s/g, ' & ');
+                line += "\\\\\n";
+
+                outputText += line;
+            }
+
+            outputText += "\\end{matrix}";
+            output.innerHTML = outputText;
+        }
+    </script>
+</body>
+</html>
