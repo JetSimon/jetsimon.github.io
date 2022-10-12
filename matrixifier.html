@@ -30,7 +30,7 @@
         {
             const inputText = input.innerHTML;
             let rawLines = inputText.split("\n");
-            let outputText = "\\begin{matrix}\n";
+            let outputText = "\\begin{bmatrix}\n";
 
             for(let i = 0; i < rawLines.length; i++)
             {
@@ -58,7 +58,7 @@
                 outputText += line;
             }
 
-            outputText += "\\end{matrix}";
+            outputText += "\\end{bmatrix}";
             output.innerHTML = outputText;
         }
 
@@ -90,7 +90,7 @@
                 return {
                     top: (top / x),
                     bottom: (bottom / x),
-                    display: (top / x) + '/' + (bottom / x)
+                    display: "\\(\\frac{" + (top / x) + "}{" + (bottom / x) + "}\\)"
                 };
             }
 };
