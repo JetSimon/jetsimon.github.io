@@ -14,13 +14,17 @@
         0.1270    0.0975    0.9575
     </textarea><br>
 
-    <button onclick="convert()">Convert</button><br>
+    <button onclick="convert()">Convert</button>
+    <input type="checkbox" id="useFractions">
+    <span>Check this to convert decimal numbers to fractions, use at your own risk</span>
+    <br>
 
     <textarea style="white-space: pre-wrap;" id="output" rows="10" cols="50">Your output will show up here</textarea>
-
+    
     <script>
         const input = document.getElementById("input");
         const output = document.getElementById("output");
+        const useFractions = document.getElementById("useFractions");
 
         function convert()
         {
@@ -33,6 +37,21 @@
                 let line = rawLines[i].replace(/\s+/g, ' ').trim();
                 if(line == false) continue;
 
+                if(useFractions.checked)
+                {
+                    let nums = line.split(" ");
+                    for(let j = 0; j < nums.length; j++)
+                    {
+                        let num = Number(nums[j]);
+                        if(num % 1 != 0)
+                        {
+                            num = decimalToFraction(num).display;
+                        }
+                        nums[j] = num;
+                    }
+                    line = nums.join(" ");
+                }
+
                 line = line.replace(/\s/g, ' & ');
                 line += "\\\\\n";
 
@@ -42,6 +61,39 @@
             outputText += "\\end{matrix}";
             output.innerHTML = outputText;
         }
+
+        // stolen from here: https://gist.github.com/redteam-snippets/3934258
+        function gcd(a, b)
+        {
+            return (b) ? gcd(b, a % b) : a;
+        }
+
+        var decimalToFraction = function (_decimal){
+            if (_decimal == parseInt(_decimal)) {
+                return {
+                    top: parseInt(_decimal),
+                    bottom: 1,
+                    display: parseInt(_decimal) + '/' + 1
+                };
+            }
+            else {
+                var top = _decimal.toString().includes(".") ? _decimal.toString().replace(/\d+[.]/, '') : 0;
+                var bottom = Math.pow(10, top.toString().replace('-','').length);
+                if (_decimal >= 1) {
+                    top = +top + (Math.floor(_decimal) * bottom);
+                }
+                else if (_decimal <= -1) {
+                    top = +top + (Math.ceil(_decimal) * bottom);
+                }
+
+                var x = Math.abs(gcd(top, bottom));
+                return {
+                    top: (top / x),
+                    bottom: (bottom / x),
+                    display: (top / x) + '/' + (bottom / x)
+                };
+            }
+};
     </script>
 </body>
 </html>
