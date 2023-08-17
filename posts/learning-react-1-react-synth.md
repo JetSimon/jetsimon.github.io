@@ -16,9 +16,9 @@ This synth uses three Web Audio API nodes:
 
 1. An oscillator node that is used to create the wave that is turned into sound. But it would keep playing forever -- and get extremely annoying -- if not for...
 2. The gain node. This bad boy allows us to control the volume on oscillator nodes. For example when the key is pressed and unpressed we smoothly transition the gain to near zero. This results in a smooth cut off that is pleasant to the ear. But what good is a music without...
-3. The convolution (reverb) node! Did you know that digital reverb is used by convoluting (fancy math way of combining signals) two audio signals together? I didn't but now I do and that's super cool! You just take a sample of a reverby sound and use Web Audio API to convolute it with your synth sound and WHAM, you sound like you're in a large church or perhaps and endless cave.
+3. The convolution (reverb) node! Did you know that digital reverb is used by convoluting (fancy math way of combining signals) two audio signals together? I didn't but now I do and that's super cool! You just take a sample of a reverby sound and use Web Audio API to convolute it with your synth sound and WHAM, you sound like you're in a large church or perhaps an endless cave.
 
-These three nodes are chained in sequence and you get the final sound. Each key uses a new sequence where the oscillator is tuned to a different frequency to make it sound right. For example A is 440Hz. I just found those by looking on wikipedia.
+These three nodes are chained in sequence and you get the final sound. Each key uses a new sequence where the oscillator is tuned to a different frequency to make it sound right. For example A is 440Hz. I just found those by looking on Wikipedia.
 
 ## What I Learned About React
 
