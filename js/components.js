@@ -1,4 +1,4 @@
-const LATEST_POST = "tinker-n-sprout-postmortem"
+const LATEST_POST = "learning-react-1-react-synth"
 
 Vue.component('logo', {
     data: function () {
