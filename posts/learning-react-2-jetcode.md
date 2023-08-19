@@ -4,7 +4,7 @@ After a nights work and a bit of today, I've got to a point where I can show my 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9Euynk7XkLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-This project was partially inspired by Tavern, a hacakthon project I did with some friends a few years ago. Like this project, Tavern was a Leetcode style programming problem site. However, for Tavern I never did any of the coding editor stuff. So that's why I did this, because I wanted to figure out how you can execute testcases for a user's code and how that kind of data would be formatted.
+This project was partially inspired by Tavern, a hackathon project I did with some friends a few years ago. Like this project, Tavern was a Leetcode style programming problem site. However, for Tavern I never did any of the coding editor stuff. So that's why I did this, because I wanted to figure out how you can execute testcases for a user's code and how that kind of data would be formatted.
 
 ## Features
 
