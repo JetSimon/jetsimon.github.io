@@ -1,4 +1,4 @@
-const LATEST_POST = "learning-react-1-react-synth"
+const LATEST_POST = "learning-react-2-jetcode"
 
 Vue.component('logo', {
     data: function () {
