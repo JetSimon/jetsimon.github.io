@@ -24,6 +24,8 @@ These three nodes are chained in sequence and you get the final sound. Each key 
 
 Where React came in handy here was allowing me to make each key of the synth a different component. Where the props of the component are the frequency and the keyboard key the user presses to activate it. I really enjoyed working with React and JSX especially. I will definitely try and make more projects and post about them.
 
+### Update: I learned how to host React pages on GitHub pages. [Try the app here if you want](https://jetsimon.com/synth-site/).
+
 ---
 
 You can find the project [here on GitHub](https://github.com/JetSimon/synth-site) if you want to see any of the code. It's pretty simple and could be done better, but it works!
