@@ -1,4 +1,4 @@
-const LATEST_POST = "learning-react-3-cts-mod-box-tool"
+const LATEST_POST = "training-a-gan-to-generate-pokemon-sprites"
 
 Vue.component('logo', {
     data: function () {
