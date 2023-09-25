@@ -45,4 +45,4 @@ However there are also weird cases where the background is blurry or noisey.
 
 My next step (after letting it run for a bit more today "just in case") will be reworking the network to work with a smaller, pixel perfect image size. As mention before, I think trying to generate larger images that are simulating smaller images could make it harder for the network to learn. So I'm trying that next!
 
-I hope you've enjoyed reading about for foray into Pokemancy. See you next time!
+I hope you've enjoyed reading about this foray into Pokemancy. See you next time!
