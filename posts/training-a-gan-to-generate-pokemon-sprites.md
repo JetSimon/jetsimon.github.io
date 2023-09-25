@@ -11,7 +11,7 @@ Also, I know that diffusion is the big thing in image generation right now. From
 2. It's just a small hobby project
 3. I notice that Diffusion networks often have a terrible time making decent quality pixel art. I want to see if I can get a GAN to do a better job.
 
-That being said for point 3, I don't know if diffusion networks are inherantely bad at generating pixel art. I think the real reason is because they are trained to generate images around 512x512 in size. Obviously with such big images trying to emulate a smaller target size you're going to have some things that don't look pixel perfect.
+That being said for point 3, I don't know if diffusion networks are inherently bad at generating pixel art. I think the real reason is because they are trained to generate images around 512x512 in size. Obviously with such big images trying to emulate a smaller target size you're going to have some things that don't look pixel perfect.
 
 ---
 
@@ -43,6 +43,6 @@ Obviously it is doing *something*. I see that it tries to make mostly symmetric 
 
 However there are also weird cases where the background is blurry or noisey.
 
-My next step (after letting it run for a bit more today "just in case") will be reworking the network to work with a smaller, pixel perfect image size. I think this could get better results and I will post here when I do!
+My next step (after letting it run for a bit more today "just in case") will be reworking the network to work with a smaller, pixel perfect image size. As mention before, I think trying to generate larger images that are simulating smaller images could make it harder for the network to learn. So I'm trying that next!
 
 I hope you've enjoyed reading about for foray into Pokemancy. See you next time!
