@@ -31,8 +31,9 @@ Vue.component('navbar', {
         <a href="../" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">About Me</a>
         <a href="../portfolio" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">Portfolio</a>
         <a href="../blog" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">Blog</a>
-        <a href="../public/resume.pdf" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">Resume</a>
-    </div>
+        <a href="../public/JetSimonGameDevResume.pdf" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">Game Dev Resume</a>
+        <a href="../public/JetSimonWebDevResume.pdf" class="hover:text-blue-800 mx-auto mt-5 flex font-comfort font-semibold text-gray-800">Web Dev Resume</a>
+        </div>
     </div>
     `
 })
