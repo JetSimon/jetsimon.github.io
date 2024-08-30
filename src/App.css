@@ -1,0 +1,43 @@
+html, body, #app, #app>div {
+  height: 100%
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: #EAEBED;
+  color: #0D1821;
+  font-family:"Suse";
+  font-size: xx-large;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: large!important;
+  }
+
+  #root {
+    max-width: 100%!important;
+  }
+}
+
+a {
+  color:#FF3434!important;
+  font-weight: bold!important;
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+a:hover {
+  color:#9E0031!important;
+  transform: scale(1.1);
+}
+
+.MainArea {
+  display: flex;
+  flex-direction: column;
+}

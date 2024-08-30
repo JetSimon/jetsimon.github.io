@@ -1,0 +1,30 @@
+.Box {
+    border: 5px solid #0D1821;
+    border-radius: 16px;
+    padding: 16px 32px;
+    font-weight: 500;
+    text-align: left;
+    box-shadow: -32px 32px rgba(52, 73, 102, 1);
+    background-color: #EAEBED;
+    animation: fadeInAnimation cubic-bezier(0.64, 0.57, 0.67, 1.53) 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 600px) {
+    .Box {
+        box-shadow: none;
+        border:none;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        scale: 0.8;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+  }

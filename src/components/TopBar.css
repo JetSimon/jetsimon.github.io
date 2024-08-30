@@ -1,0 +1,12 @@
+.TopBar {
+    margin-bottom: 5%;
+    place-items: center;
+    display:flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    .TopBar {
+        margin-bottom:auto!important;
+    }
+}

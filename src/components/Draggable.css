@@ -1,0 +1,7 @@
+.DraggableHandle {
+    cursor: pointer;
+}
+
+.DraggableHandle > * {
+    cursor: initial;
+}
