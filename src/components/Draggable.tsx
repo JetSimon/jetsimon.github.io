@@ -67,8 +67,9 @@ function Draggable(props : PropsWithChildren<DraggableProps>) {
             if(div) {
                 div.removeEventListener("mousedown", onMouseDown);
                 window.removeEventListener("mouseup", onMouseUp);
-                clearInterval(animateBackInterval);
             }
+
+            clearInterval(animateBackInterval);
         };
     }, [draggableRef, props.startXOffset, props.startYOffset]);
 
