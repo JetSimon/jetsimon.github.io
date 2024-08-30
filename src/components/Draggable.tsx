@@ -29,7 +29,7 @@ function Draggable(props : PropsWithChildren<DraggableProps>) {
             }
         }
 
-        const animateBackInterval = setInterval(animateBack, 1000 / 60);
+        const animateBackInterval = setInterval(animateBack, 1000 / 40);
 
         function handleMouseMove(e : MouseEvent) {
             setXVelocity(xVelocity => 0.90 * xVelocity + 0.10 * -e.movementX);

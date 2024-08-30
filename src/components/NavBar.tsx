@@ -1,13 +1,14 @@
 import './NavBar.css'
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
         <div className='NavBar'>
-            <a href="">About Me</a>
+            <Link to="../">About Me</Link>
             <span className="Spacer">|</span>
-            <a href="">Portfolio</a>
+            <Link to="../portfolio">Portfolio</Link>
             <span className="Spacer">|</span>
-            <a href="">Blog</a>
+            <Link to="">Blog</Link>
             <span className="Spacer">|</span>
             <a href="../JetSimonGameDevResume.pdf">Game Dev Resume</a>
             <span className="Spacer">|</span>

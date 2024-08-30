@@ -1,13 +1,11 @@
 import './App.css'
 import Box from './components/Box'
 import ThreeText from './components/ThreeText'
-import TopBar from './components/TopBar'
 
-function App() {
+function AboutMe() {
   
   return (
     <div className='MainArea'>
-      <TopBar></TopBar>
       <Box>
         <ThreeText>About Me</ThreeText>
         <p>
@@ -24,4 +22,4 @@ function App() {
   )
 }
 
-export default App
+export default AboutMe
