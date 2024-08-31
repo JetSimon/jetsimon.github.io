@@ -2,6 +2,10 @@
     cursor: pointer;
 }
 
-.DraggableHandle > * {
+.DraggableHandle > :not(.DraggableHandle) {
     cursor: initial;
+}
+
+.Draggable {
+    display: inline-block;
 }

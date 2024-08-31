@@ -1,14 +1,14 @@
 import './App.css'
 import TopBar from './components/TopBar'
 import { Outlet } from 'react-router-dom'
+import './Layout.css'
 
 function Layout() {
-  
   return (
-    <>
-      <TopBar></TopBar>
+    <div className='Layout'>
+      <TopBar key={"test"}></TopBar>
       <Outlet></Outlet>
-    </>
+    </div>
   )
 }
 

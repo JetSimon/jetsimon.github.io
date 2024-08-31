@@ -2,29 +2,30 @@ import { useRef, useState, PropsWithChildren, useEffect } from "react";
 import "./Draggable.css";
 
 interface DraggableProps {
-    startXOffset : number;
-    startYOffset : number;
+    snapBack : boolean;
 }
 
 function Draggable(props : PropsWithChildren<DraggableProps>) {
+
     const draggableRef = useRef<HTMLDivElement>(null);
-    const [xOffset, setXOffset] = useState(0);
-    const [yOffset, setYOffset] = useState(0);
+    const [xOffset, setXOffset] = useState((Math.random() - 0.5) * 250);
+    const [yOffset, setYOffset] = useState((Math.random() - 0.5) * 250);
     const [xVelocity, setXVelocity] = useState(0);
     useEffect(() => {
 
         let isDragging = false;
 
-        setXOffset(props.startXOffset);
-        setYOffset(props.startYOffset);
-        setXVelocity(props.startXOffset / 10)
+        setXVelocity((Math.random() - 0.5) * 250 / 10);
 
         const div = draggableRef && draggableRef.current;
 
         function animateBack() {
             if(!isDragging) {
-                setXOffset(xOffset => xOffset * 0.90);
-                setYOffset(yOffset => yOffset * 0.90);
+                if(props.snapBack) {
+                    setXOffset(xOffset => xOffset * 0.90);
+                    setYOffset(yOffset => yOffset * 0.90);
+                }
+                
                 setXVelocity(xVelocity => xVelocity * 0.90);
             }
         }
@@ -44,6 +45,7 @@ function Draggable(props : PropsWithChildren<DraggableProps>) {
                     window.addEventListener("mousemove", handleMouseMove);
                     isDragging = true;
                     div.style.userSelect = "none";
+                    div.style.zIndex = "3";
                 }
             }
         }
@@ -55,6 +57,7 @@ function Draggable(props : PropsWithChildren<DraggableProps>) {
             const div = draggableRef && draggableRef.current;
             if(div) {
                 div.style.userSelect = "initial";
+                div.style.zIndex = "0";
             }
         }
 
@@ -71,7 +74,7 @@ function Draggable(props : PropsWithChildren<DraggableProps>) {
 
             clearInterval(animateBackInterval);
         };
-    }, [draggableRef, props.startXOffset, props.startYOffset]);
+    }, [draggableRef]);
 
     function getTranslateString() {
         const deg = Math.min(Math.abs(xVelocity), 45) * Math.sign(xVelocity);
@@ -79,7 +82,7 @@ function Draggable(props : PropsWithChildren<DraggableProps>) {
     }
 
     return (
-        <div style={{transform:getTranslateString()}} ref={draggableRef}>
+        <div className="Draggable" style={{transform:getTranslateString()}} ref={draggableRef}>
             {props.children}
         </div>
     )

@@ -27,7 +27,8 @@
 }
 
 .ThreeTextMain {
-    -webkit-text-stroke: 4px #0D1821;
+    -webkit-text-stroke: 6px #0D1821;
+    paint-order: stroke fill;
     color:#FF3434;
     position: absolute;
     top:-8px;
