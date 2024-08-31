@@ -5,7 +5,10 @@ import "./TopBar.css";
 function TopBar() {
     return (
         <div className="TopBar">
-            <Logo></Logo>
+            <div className="TwoLogoHolder">
+                <Logo content="Jet"></Logo>
+                <Logo content="Simon"></Logo>
+            </div>
             <NavBar></NavBar>
         </div>
     );

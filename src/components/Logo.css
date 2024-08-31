@@ -1,5 +1,12 @@
 .LogoHolder {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
+    user-select: none;
+    display:flex;
+    flex-direction: row;
+    gap:4px;
+}
+
+@media only screen and (max-width: 600px) {
+    .LogoHolder {
+        gap:0px!important;
+    }
 }

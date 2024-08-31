@@ -13,6 +13,9 @@
 
     .NavBar {
         margin: 0px !important;
+        font-size: small;
+        margin-top: 16px!important;
+        margin-bottom:16px!important;
     }
 
     .Spacer {

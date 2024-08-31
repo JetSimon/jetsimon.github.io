@@ -39,6 +39,14 @@ a:hover {
   transform: scale(1.1);
 }
 
+.BigHover {
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.BigHover:hover {
+  transform: scale(1.1);
+}
+
 .MainArea {
   margin:auto;
   display: flex;

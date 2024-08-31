@@ -12,14 +12,13 @@
        font-size:larger!important;
        top:0px!important;
        left:0px!important;
-       -webkit-text-stroke: 0px black!important;
-       padding: 8px;
+       -webkit-text-stroke: 1px #0D1821;
+       padding: 2px;
     }
 
     .ThreeTextShadow {
         display: none !important;
     }
-    
 }
 
 .ThreeTextHolder {

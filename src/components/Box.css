@@ -13,8 +13,10 @@
 
 @media only screen and (max-width: 600px) {
     .Box {
-        box-shadow: none;
-        border:none;
+        box-shadow: -2px 2px rgba(52, 73, 102, 1);
+        border: 2px solid #0D1821;
+        padding: 0px 8px;
+        margin-top:4px;
     }
 }
 

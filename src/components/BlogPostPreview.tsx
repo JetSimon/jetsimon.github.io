@@ -10,7 +10,7 @@ function BlogPostPreview(props: BlogPostPreviewProps) {
   return (
     <div style={{ textAlign:"center", display: "inline-block", userSelect: "none" }}>
         <Box>
-        <Link to={"../blog/" + props.postId}>{props.post.title}</Link>
+        <Link to={"../blog/" + props.postId}><div className="BigHover">{props.post.title}</div></Link>
         </Box>
     </div>
   );

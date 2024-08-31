@@ -10,3 +10,8 @@
         margin-bottom:auto!important;
     }
 }
+
+.TwoLogoHolder {
+    display: flex;
+    gap: 24px;
+}

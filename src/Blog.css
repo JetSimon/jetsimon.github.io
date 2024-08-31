@@ -3,6 +3,7 @@
     flex-direction: column;
     place-items: center;
     margin:auto;
+
 }
 
 .BlogArea {
@@ -16,6 +17,12 @@
 @media only screen and (max-width: 600px) {
     .BlogArea {
        width: 100%!important;
+       padding: 8px;
+       font-size: small;
+    }
+
+    .BlogTitleArea {
+        padding: 8px;
     }
 }
 
