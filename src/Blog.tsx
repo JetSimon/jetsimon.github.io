@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 import BlogPostDataBase from './data_types/BlogPostDatabase';
 import BlogPost from './data_types/BlogPost';
 import Markdown from 'react-markdown'
-import BlogPostList from './BlogPostList';
 
 function Blog() {
 

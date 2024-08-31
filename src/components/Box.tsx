@@ -4,7 +4,7 @@ import './Box.css'
 
 function Box(props : PropsWithChildren) {
     return (
-        <Draggable snapBack={true} startXOffset={(Math.random() - 0.5) * 250} startYOffset={(Math.random() - 0.5) * 250}>
+        <Draggable snapBack={true}>
             <div className="DraggableHandle Box">
             {props.children}   
             </div>
