@@ -12,7 +12,7 @@
        font-size:larger!important;
        top:0px!important;
        left:0px!important;
-       -webkit-text-stroke: 0px #0D1821;
+       -webkit-text-stroke: 0px #0D1821!important;
        padding: 2px;
     }
 
