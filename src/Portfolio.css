@@ -1,0 +1,16 @@
+.PortfolioBox {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+
+.PortfolioImage {
+    width: 50%;
+    border-radius: 8px;
+    border: 6px #0D1821 solid;
+}
+
+.Portfolio {
+    overflow:show;
+}

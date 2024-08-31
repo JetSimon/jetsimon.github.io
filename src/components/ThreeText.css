@@ -1,0 +1,49 @@
+.ThreeText {
+    font-size: 128px;
+    font-weight: 800;
+    margin:0px;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .ThreeText {
+       position: relative!important;
+       font-size:larger!important;
+       top:0px!important;
+       left:0px!important;
+       -webkit-text-stroke: 0px black!important;
+       padding: 8px;
+    }
+
+    .ThreeTextShadow {
+        display: none !important;
+    }
+    
+}
+
+.ThreeTextHolder {
+    position: relative;
+}
+
+.ThreeTextMain {
+    -webkit-text-stroke: 6px #0D1821;
+    paint-order: stroke fill;
+    color:#FF3434;
+    position: absolute;
+    top:0px;
+    left:0px;
+    transform: translate(8px, -8px);
+}
+
+.ThreeTextShadow {
+    position: absolute;
+    color:rgba(52, 73, 102, 1);
+    user-select: none;
+    top:0px;
+    left:0px;
+}
+
+.InvisibleText {
+    visibility: hidden;
+}

@@ -1,0 +1,17 @@
+.BlogTitleArea {
+    display:flex;
+    flex-direction: column;
+    place-items: center;
+    margin:auto;
+}
+
+.BlogArea {
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+img {
+    width: 100%;
+}
