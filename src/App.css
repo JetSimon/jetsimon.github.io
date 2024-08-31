@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+html {
+  background-color: #EAEBED!important;
+}
+
 body {
   background-color: #EAEBED;
   color: #0D1821;

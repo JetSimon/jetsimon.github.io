@@ -42,7 +42,7 @@ function Portfolio() {
   }
 
   return (
-    <div className=''>
+    <div className='Portfolio'>
       <Box key={selectedItemTitle}>
         {getBoxContent()}
       </Box>
