@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import BlogPostDataBase from './data_types/BlogPostDatabase';
 import BlogPost from './data_types/BlogPost';
 import Markdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw';
 
 function Blog() {
 
@@ -54,7 +55,7 @@ function Blog() {
         <div className='BlogTitleArea'>
             <ThreeText>{postData.title}</ThreeText>
         </div>
-        <Markdown>{postMarkdown}</Markdown>
+        <Markdown rehypePlugins={[rehypeRaw]}>{postMarkdown}</Markdown>
     </div>
   )
 }
