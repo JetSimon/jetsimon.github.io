@@ -2,8 +2,8 @@
     font-size: 128px;
     font-weight: 800;
     margin:0px;
-    white-space: nowrap;
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -31,11 +31,19 @@
     paint-order: stroke fill;
     color:#FF3434;
     position: absolute;
-    top:-8px;
-    left:8px;
+    top:0px;
+    left:0px;
+    transform: translate(8px, -8px);
 }
 
 .ThreeTextShadow {
+    position: absolute;
     color:rgba(52, 73, 102, 1);
     user-select: none;
+    top:0px;
+    left:0px;
+}
+
+.InvisibleText {
+    visibility: hidden;
 }

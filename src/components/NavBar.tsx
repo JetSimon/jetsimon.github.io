@@ -8,7 +8,7 @@ function NavBar() {
             <span className="Spacer">|</span>
             <Link to="../portfolio">Portfolio</Link>
             <span className="Spacer">|</span>
-            <Link to="">Blog</Link>
+            <Link to="../blog">Blog</Link>
             <span className="Spacer">|</span>
             <a href="../JetSimonGameDevResume.pdf">Game Dev Resume</a>
             <span className="Spacer">|</span>
