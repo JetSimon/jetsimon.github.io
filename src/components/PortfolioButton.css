@@ -9,8 +9,8 @@
     animation: fadeInAnimation cubic-bezier(0.64, 0.57, 0.67, 1.53) 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    height: 256px;
-    width: 256px;
+    width:128px;
+    height:128px;
     cursor: pointer;
     text-align: center;
     display:flex;
@@ -22,6 +22,16 @@
     background-blend-mode: lighten;
     -webkit-text-stroke: #EAEBED 8px;
     paint-order: stroke fill;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .PortfolioButton {
+       width: 64px!important;
+       height: 64px!important;
+       font-size: small!important;
+       -webkit-text-stroke: #EAEBED 2px;
+    }
 }
 
 .PortfolioButton:hover {

@@ -13,4 +13,18 @@
 
 .Portfolio {
     overflow:show;
+    width: 66%;
+    margin:auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .Portfolio {
+        width: 100%!important;
+    }
+}
+
+.PortfolioButtonHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

@@ -15,7 +15,7 @@ body {
   background-color: #EAEBED;
   color: #0D1821;
   font-family:"Suse";
-  font-size: xx-large;
+  font-size: large;
 }
 
 @media only screen and (max-width: 600px) {
@@ -40,6 +40,14 @@ a:hover {
 }
 
 .MainArea {
+  margin:auto;
   display: flex;
   flex-direction: column;
+  width: 66%;
+}
+
+@media only screen and (max-width: 600px) {
+  .MainArea {
+     width: 100%!important;
+  }
 }

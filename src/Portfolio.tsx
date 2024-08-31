@@ -20,6 +20,9 @@ function Portfolio() {
         <p>
           A few things I've made are floating around. If something interests you, click on it to check it out.
         </p>
+        <p>
+          If something is in the way, just drag and drop it somewhere else.
+        </p>
         </>
       );
     }
@@ -46,7 +49,9 @@ function Portfolio() {
       <Box key={selectedItemTitle}>
         {getBoxContent()}
       </Box>
-      {portfolioData.map((item) => <PortfolioButton item={item} key={item.title} setSelectedItemTitle={setSelectedItemTitle} selected={item.title == selectedItemTitle}></PortfolioButton>)}
+      <div className='PortfolioButtonHolder'>
+        {portfolioData.map((item) => <PortfolioButton item={item} key={item.title} setSelectedItemTitle={setSelectedItemTitle} selected={item.title == selectedItemTitle}></PortfolioButton>)}
+      </div>
     </div>
   )
 }

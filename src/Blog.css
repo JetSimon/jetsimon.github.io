@@ -6,12 +6,25 @@
 }
 
 .BlogArea {
-    display:flex;
-    flex-direction: column;
+    width: 66%;
     text-align: left;
+    display:flex;
+    margin:auto;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    .BlogArea {
+       width: 100%!important;
+    }
 }
 
 
 img {
     width: 100%;
+    max-width: 500px;
+}
+
+p:has(img) {
+    margin:auto;
 }
