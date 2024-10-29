@@ -10,9 +10,7 @@ function NavBar() {
             <span className="Spacer">|</span>
             <Link to="../blog">Blog</Link>
             <span className="Spacer">|</span>
-            <a href="../JetSimonGameDevResume.pdf">Game Dev Resume</a>
-            <span className="Spacer">|</span>
-            <a href="../JetSimonWebDevResume.pdf">Web Dev Resume</a>
+            <a href="../JetSimonResume.pdf">Resume</a>
         </div>
     )
 }
