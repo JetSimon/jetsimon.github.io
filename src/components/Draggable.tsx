@@ -8,8 +8,8 @@ interface DraggableProps {
 function Draggable(props : PropsWithChildren<DraggableProps>) {
 
     const draggableRef = useRef<HTMLDivElement>(null);
-    const [xOffset, setXOffset] = useState((Math.random() - 0.5) * 250);
-    const [yOffset, setYOffset] = useState((Math.random() - 0.5) * 250);
+    const [xOffset, setXOffset] = useState((Math.random() - 0.5) * 250 * 0);
+    const [yOffset, setYOffset] = useState((Math.random() - 0.5) * 250 * 0);
     const [xVelocity, setXVelocity] = useState(0);
     useEffect(() => {
 

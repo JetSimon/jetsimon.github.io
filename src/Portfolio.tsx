@@ -39,7 +39,7 @@ function Portfolio() {
         Made with: {item.tech.join(", ")}
       </p>
       <a href={item.link}>Try It</a>
-      <a href={item.source}>Source</a>
+      {item.source != "" && <a href={item.source}>Source</a>}
       </div>
     );
   }

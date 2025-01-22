@@ -5,7 +5,8 @@ interface PortfolioItemData {
     image : string,
     link : string
     source : string,
-    learned : string[]
+    learned : string[],
+    blurb : string
 }
 
 export default PortfolioItemData;

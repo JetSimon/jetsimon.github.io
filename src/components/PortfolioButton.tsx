@@ -1,4 +1,4 @@
-import PortfolioItemData from "../data_types/PortfolioitemData"
+import PortfolioItemData from "../data_types/PortfolioItemData"
 import "./PortfolioButton.css"
 import Draggable from "./Draggable";
 import { useEffect, useRef, useState} from "react";
@@ -61,13 +61,19 @@ function PortfolioButton(props : PortfolioButtonProps) {
     }
 
     return (
-        <Draggable snapBack={false}>
-            <div style={{backgroundImage:getBackground(), visibility : selected || invisible ? "hidden" : "visible"}} className="PortfolioButton DraggableHandle" ref={ref}>
-                <p className="PortfolioButtonText DraggableHandle">
-                    {item.title}
-                </p>
+        <div>
+            <div className="PortfolioButtonBackground">
+                <Draggable snapBack={false}>
+                <div style={{backgroundImage:getBackground(), visibility : selected || invisible ? "hidden" : "visible"}} className="PortfolioButton DraggableHandle" ref={ref}>
+                    <p className="PortfolioButtonText DraggableHandle">
+                        {item.title}
+                    </p>
+                </div>
+                </Draggable>
             </div>
-        </Draggable>
+            <p className="PortfolioButtonBlurb">{item.blurb}</p>
+        </div>
+        
     )
 }
 

@@ -32,6 +32,12 @@
        font-size: small!important;
        -webkit-text-stroke: #EAEBED 2px;
     }
+
+    .PortfolioButtonBlurb {
+        width: 64px!important;
+        font-size: small!important;
+    }
+
 }
 
 .PortfolioButton:hover {
@@ -42,4 +48,16 @@
 .PortfolioButtonText {
     margin:auto;
     user-select: none;
+}
+
+.PortfolioButtonBackground {
+    border-radius: 100%;
+    border: 3px dashed rgba(0, 0, 0, 0.091);
+}
+
+.PortfolioButtonBlurb {
+    font-size: medium;
+    color:grey;
+    width: 128px;
+    text-align: center;
 }
