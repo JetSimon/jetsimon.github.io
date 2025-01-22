@@ -152,6 +152,19 @@ const portfolioData : PortfolioItemData[] = [
     ],
     blurb: "Tile Puzzle Solver"
   },
+  {
+    title: "Browser 3D Renderer",
+    desc: "A small, unoptimized 3D renderer that runs entirely on the CPU. Read OBJ files and render them in (kind of) real time!",
+    tech: ["html", "css", "javascript", "3d graphics"],
+    image: "https://jetsimon.com/img/renderer.png",
+    source: "https://github.com/JetSimon/canvas-3d-renderer",
+    link: "https://jetsimon.com/canvas-3d-renderer/",
+    learned: [
+      "I learned how to apply the concepts I learned at school from memory and write a 3D renderer!",
+      "It turned out to be super slow to run on the CPU and in a browser, but it was super fun."
+    ],
+    blurb: "My .obj Viewer"
+  },
 ];
 
 export default portfolioData;
