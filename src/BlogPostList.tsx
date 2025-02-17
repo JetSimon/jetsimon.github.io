@@ -1,10 +1,9 @@
+import { useEffect, useState } from 'react';
 import './BlogPostList.css';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import BlogPostDataBase from './data_types/BlogPostDatabase';
-import BlogPost from './data_types/BlogPost';
 import BlogPostPreview from './components/BlogPostPreview';
 import ThreeText from './components/ThreeText';
+import BlogPost from './data_types/BlogPost';
+import BlogPostDataBase from './data_types/BlogPostDatabase';
 
 interface BothBlogData {
     postId : string,
@@ -40,7 +39,7 @@ function BlogPostList() {
       }, []);
     
       if(postIds == null || bothBlogData == null) {
-        return <></>
+        return <h2>Fetching posts...</h2>
       }
     
       return (
