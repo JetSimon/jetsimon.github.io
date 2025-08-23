@@ -1,11 +1,12 @@
 import PortfolioItemData from "../data_types/PortfolioItemData";
 
-const portfolioData : PortfolioItemData[] = [
+const portfolioData: PortfolioItemData[] = [
   {
     title: "Goshzilla Is In Love",
     desc: "A short, cute, and monsterous dating sim about being a two kaiju in love.",
     tech: ["Unity", "FLStudio", "Blender"],
-    image: "https://img.itch.zone/aW1hZ2UvMTE3NDAyOC82ODM2MTc3LmdpZg==/347x500/kWgr2T.gif",
+    image:
+      "https://img.itch.zone/aW1hZ2UvMTE3NDAyOC82ODM2MTc3LmdpZg==/347x500/kWgr2T.gif",
     source: "https://simonjet.itch.io/goshzilla-is-in-love",
     link: "https://simonjet.itch.io/goshzilla-is-in-love",
     learned: [
@@ -13,13 +14,14 @@ const portfolioData : PortfolioItemData[] = [
       "How to create a node based dialogue system in Unity",
       "I learned quite a bit about working with the 3D Unity pipeline. I was familiar before but the intensive nature of a game jam really honed me in.",
     ],
-    blurb: "Kaiju Dating Game"
+    blurb: "Kaiju Dating Game",
   },
   {
     title: "7 Second Haircuts",
     desc: "Browser based game made for What-A-Jam May 2021 game jam. Was quite successful on itch.io with 4000+ plays and at one point being the 12th most popular web game on the site. Earned a review on the site Free Game Planet",
     tech: ["Unity", "FLStudio", "Aseprite"],
-    image: "https://img.itch.zone/aW1hZ2UvMTAzODAyNS81OTI3MjY3LmdpZg==/original/sheyxh.gif",
+    image:
+      "https://img.itch.zone/aW1hZ2UvMTAzODAyNS81OTI3MjY3LmdpZg==/original/sheyxh.gif",
     source: "https://simonjet.itch.io/7-second-haircuts",
     link: "https://simonjet.itch.io/7-second-haircuts",
     learned: [
@@ -28,13 +30,14 @@ const portfolioData : PortfolioItemData[] = [
       "Built in tutorials are the best way to teach a player. They will not want to read your descriptoin to find out how to play!",
       "It was very useful to pick the somewhat messy and cartoonish art style. It made producing assets fast and fun!",
     ],
-    blurb: "Cut Hair Fast"
+    blurb: "Cut Hair Fast",
   },
   {
     title: "Tavern",
     desc: "A gameified RPG style coding challenge site made in 24 hours for the nwHacks 2021 hackathon with some friends. Very cool experience working with a team to bring a product to life in such a short time. I mainly worked on the avatar creation system. Lots of SVGs! Won honorable mention.",
     tech: ["redwood js", "react", "tailwind css", "magic auth", "vanilla js"],
-    image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/331/233/datas/original.png",
+    image:
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/331/233/datas/original.png",
     source: "https://github.com/amorriscode/tavern",
     link: "https://devpost.com/software/tavern-2764g3",
     learned: [
@@ -44,7 +47,7 @@ const portfolioData : PortfolioItemData[] = [
       "A little last minute work on a homepage goes a longway. We were working with almost no homepage until the last hour of the project and it added a lot!",
       "Sometimes the easiest solution actually is the best one.",
     ],
-    blurb: "Leetcode + RPG"
+    blurb: "Leetcode + RPG",
   },
   {
     title: "Jet's Code 1 Tool",
@@ -57,20 +60,21 @@ const portfolioData : PortfolioItemData[] = [
       "How to read files in react",
       "How to manipulate json data with react and then give it back to the user",
     ],
-    blurb: "Modding Tool"
+    blurb: "Modding Tool",
   },
   {
     title: "Jet's Code 2 Tool",
     desc: "A modding tool for browser based election game 'The Campaign Trail' that allows users to create mods visually without having to know how to edit json.",
     tech: ["js", "vue", "css"],
     image: "https://jetsimon.com/img/code2.png",
-    source: "https://github.com/JetSimon/Jets-The-Campaign-Trail-Mod-Tool-Website",
+    source:
+      "https://github.com/JetSimon/Jets-The-Campaign-Trail-Mod-Tool-Website",
     link: "https://jetsimon.com/Jets-The-Campaign-Trail-Mod-Tool-Website/",
     learned: [
       "How to read files in vue",
       "How to manipulate json data with vue and then give it back to the user",
     ],
-    blurb: "Another Modding Tool"
+    blurb: "Another Modding Tool",
   },
   {
     title: "OSEG",
@@ -83,7 +87,7 @@ const portfolioData : PortfolioItemData[] = [
       "How to read files in vue",
       "How to manipulate json data with vue and then give it back to the user",
     ],
-    blurb: "Election Game Engine"
+    blurb: "Election Game Engine",
   },
   {
     title: "The Community Trail",
@@ -96,7 +100,7 @@ const portfolioData : PortfolioItemData[] = [
       "How to create a whole fullstack site using Firebase and Firestore",
       "How to write a robust and scalable database structure and handle all the pitfalls that comes with databases!",
     ],
-    blurb: "Election Game Website"
+    blurb: "Election Game Website",
   },
   {
     title: "Subanagrams",
@@ -108,9 +112,9 @@ const portfolioData : PortfolioItemData[] = [
     learned: [
       "I wrote an algorithm to find every possible contiguous subset anagram (or subanagram) in a word",
       "People played it and it was fun!",
-      "The puzzles are automatically generated every day based on random seeds. This is good and bad."
+      "The puzzles are automatically generated every day based on random seeds. This is good and bad.",
     ],
-    blurb: "Word Game"
+    blurb: "Word Game",
   },
   {
     title: "VidGen",
@@ -123,9 +127,9 @@ const portfolioData : PortfolioItemData[] = [
       "I learned how to use OpenAI API to generated video scripts",
       "I learned how to use BERT to get the most important words from sentences",
       "I learned how to use a bunch of stock footage and image APIs to search for those words",
-      "I learned how to use MoviePY to edit videos with code"
+      "I learned how to use MoviePY to edit videos with code",
     ],
-    blurb: "AI Video Slop"
+    blurb: "AI Video Slop",
   },
   {
     title: "Emotree",
@@ -135,9 +139,9 @@ const portfolioData : PortfolioItemData[] = [
     source: "https://github.com/JetSimon/emotree",
     link: "https://github.com/JetSimon/emotree",
     learned: [
-      "I learned how to manipulate the webcam feed using OpenCV and make cool effects"
+      "I learned how to manipulate the webcam feed using OpenCV and make cool effects",
     ],
-    blurb: "Emojify Videos"
+    blurb: "Emojify Videos",
   },
   {
     title: "Ngân Puzzle Solver",
@@ -148,9 +152,9 @@ const portfolioData : PortfolioItemData[] = [
     link: "https://github.com/JetSimon/ngan-puzzle-solver",
     learned: [
       "I learned how to use flood fill to detect which tile shapes the player has painted into the grid",
-      "I learned how to use dynamic programming to arrive at a solution to the hard problem of trying to fit tiles perfectly into a grid"
+      "I learned how to use dynamic programming to arrive at a solution to the hard problem of trying to fit tiles perfectly into a grid",
     ],
-    blurb: "Tile Puzzle Solver"
+    blurb: "Tile Puzzle Solver",
   },
   {
     title: "Browser 3D Renderer",
@@ -161,9 +165,9 @@ const portfolioData : PortfolioItemData[] = [
     link: "https://jetsimon.com/canvas-3d-renderer/",
     learned: [
       "I learned how to apply the concepts I learned at school from memory and write a 3D renderer!",
-      "It turned out to be super slow to run on the CPU and in a browser, but it was super fun."
+      "It turned out to be super slow to run on the CPU and in a browser, but it was super fun.",
     ],
-    blurb: "My .obj Viewer"
+    blurb: "My .obj Viewer",
   },
 ];
 
