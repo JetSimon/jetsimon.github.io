@@ -13,8 +13,6 @@ function NavBar() {
             <a href="/JetSimonResume.pdf">Resume</a>
             <span className="Spacer">|</span>
             <a href="https://jetsimon.com/cool-sites/">Cool Sites</a>
-            <span className="Spacer">|</span>
-            <a href="https://jetsimon.com/dailies/">Daily Games</a>
         </div>
     )
 }
