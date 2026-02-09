@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet's GIF Collection</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .gifs {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .gifs img {
+            max-height: 256px;
+            padding: 8px;
+        }
+
+        .gifs img:hover {
+            outline: solid 2px yellow;
+        }
+
+        .header {
+            text-align: center;
+            color: yellow;
+            display: flex;
+            place-items: center;
+            gap: 32px;
+            justify-content: center;
+        }
+
+        .gifs-header {
+            height: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img class="gifs-header" src="/gifs/gifs.gif"></img>
+        <h1>
+            Jet's GIF Collection
+        </h1>
+        <img class="gifs-header" src="/gifs/gifs.gif"></img>
+    </div>
+
+    <div class="gifs">
+        <img alt="A gif of a clownfish that says Giannis Monday" src="/gifs/clownfish-actc.gif"></img>
+
+        <img alt="A cat who is grumpy saying deeply unserious" src="/gifs/deeply-unserious.gif"></img>
+
+        <img alt="Socrates has sunglasses fall from the sky and then a dialetic is successful"
+            src="/gifs/dialetic-successfull.gif"></img>
+
+        <img alt="Lorne Armstrong is happy. He understood your reference."
+            src="/gifs/i-understood-that-i-need-off-internet.gif"></img>
+
+        <img alt="You committed RO" src="/gifs/ro.gif"></img>
+
+        <img alt="A cute cat is sad because Jet is at work. He has a job!" src="/gifs/jet-is-at-work.gif"></img>
+
+        <img alt="A picture of Jet sleeping like the pig in the sleeping next to your pig gif"
+            src="/gifs/jet-pig.gif"></img>
+    </div>
+</body>
+
+</html>
