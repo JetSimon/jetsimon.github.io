@@ -1,0 +1,21 @@
+.Critter {
+    max-width: 256px;
+}
+
+.AppleCritter {
+    place-items: center;
+}
+
+.CritterButtons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.CritterSelect {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding: 8px;
+}
