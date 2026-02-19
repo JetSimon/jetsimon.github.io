@@ -52,6 +52,11 @@ const critters: Array<CritterProps> = [
         title: "Mrs. Potato Critter",
         img: "/critters/18-2-2026.jpg",
         date: "2/18/2026"
+    },
+    {
+        title: "Baby Critter",
+        img: "/critters/19-2-2026.jpg",
+        date: "2/19/2026"
     }
 ];
 
