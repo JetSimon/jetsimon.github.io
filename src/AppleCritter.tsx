@@ -142,6 +142,11 @@ const critters: Array<CritterProps> = [
         title: "Finally!",
         img: "/critters/24-3-2026.jpg",
         date: "24/3/2026"
+    },
+    {
+        title: "Apple Brain Parasite",
+        img: "/critters/25-3-2026.jpg",
+        date: "25/3/2026"
     }
 ];
 
